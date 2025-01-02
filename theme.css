@@ -1,0 +1,191 @@
+:root {
+    --object-background-color: #09010f;
+    --border-color: #9f8e9d;
+
+    --accent-color: #9e22d8;
+    --main-color: white;
+
+    --background: linear-gradient(0, black 0%, #190623 100%);
+    --text-gradient: linear-gradient(to right, var(--main-color) 0%, var(--accent-color) 100%);
+
+    --transition-duration: 100ms;
+    --border-width: 0.1rem;
+    --border-radius: 1rem;
+
+    --list-margin: 0;
+}
+
+
+
+/* Main pages */
+.backgroundContainer {
+  background: var(--background);
+}
+
+div.flex.align-items-center.flex-grow.headerTop {
+  background-color: var(--object-background-color);
+}
+
+div.mainDrawer-scrollContainer.scrollContainer.focuscontainer-y.scrollY {
+  background-color: var(--object-background-color);
+}
+
+/* Detail pages */
+div.detailPageSecondaryContainer.padded-bottom-page {
+  background-color: var(--object-background-color);
+}
+
+div.detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
+  background-color: var(--object-background-color);
+}
+
+
+/* Selection cards */
+.cardScalable > * {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: var(--border-radius);
+}
+
+.card-hoverable {
+  transition-duration: var(--transition-duration);
+}
+
+.card-hoverable:hover, card-hoverable:active {
+  transform: scale(1.05);
+}
+
+.cardFooter.visualCardBox-cardFooter {
+  background: var(--object-background-color);
+}
+
+.cardScalable.visualCardBox-cardScalable {
+  background: var(--object-background-color);
+}
+
+.cardBox:not(.visualCardBox) .cardPadder
+
+/* Played icon */
+.playedIndicator, .countIndicator {
+  background: var(--accent-color);
+}
+
+.cardBox:not(.visualCardBox) .cardPadder {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* Admin pages */
+
+.paperList {
+  color: var(--main-color);
+  background: var(--object-background-color);
+}
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation0.MuiDrawer-paper.MuiDrawer-paperAnchorLeft.MuiDrawer-paperAnchorDockedLeft.css-4yt2of {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: var(--border-color);
+}
+
+.MuiToolbar-root {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* Top bar background when scrolling */
+.css-fknfom {
+  background-color: var(--object-background-color);
+  background-image: none;
+}
+
+
+/* Buttons */
+.emby-button {
+  color: var(--main-color);
+}
+
+.emby-button:active, .emby-button:hover {
+  color: var(--accent-color);
+}
+
+.raised.emby-button {
+  background: var(--object-background-color);
+  color: var(--main-color);
+}
+
+.raised.emby-button:active, .raised.emby-button:hover {
+  background: var(--accent-color);
+}
+
+.sectionTitleButton.emby-button, .submit.emby-button {
+  background: var(--object-background-color)
+}
+
+
+/* Lists */
+.listItem-border {
+  border-color: var(--border-color);
+}
+
+.listItem {
+  border-radius: var(--border-radius);
+  border: none;
+  margin-bottom: var(--list-margin);
+
+  transition-duration: var(--transition-duration);
+}
+
+.listItem:hover, .listItem:active {
+  background: var(--accent-color);
+}
+
+
+/* Inputs */
+.emby-input, .emby-select, .emby-textarea {
+  background: var(--object-background-color);
+  color: var(--main-color);
+  border-color: var(--border-color);
+  border-width: var(--border-width);
+}
+
+
+/* Music playback bar */
+.nowPlayingBarTop {
+  background: var(--object-background-color);
+  color: var(--main-color);
+}
+
+.mdl-slider-background-lower {
+  background: var(--accent-color);
+}
+
+.mdl-slider-background-upper {
+  background: var(--border-color);
+}
+
+div[data-role="controlgroup"] a.ui-btn-active,
+.iconOsdProgressInner,
+.mdl-slider::-moz-range-thumb {
+  background: var(--accent-color);
+}
+
+
+/* Texts and icons */
+label, .sectionTitle, .cardText-first, .mainDrawer-scrollContainer, .headerRight {
+  color: var(--main-color);
+}
+
+.paper-icon-button-light:hover,
+.raised.homeLibraryButton:hover,
+.button-flat:hover,
+.playstatebutton-icon-played,
+.ratingbutton-icon-withrating,
+.paper-icon-button-light:hover:not(:disabled),
+.emby-tab-button:hover,
+.selectLabelFocused,
+.inputLabelFocused,
+.textareaLabelFocused {
+  color: var(--accent-color);
+}
+
+
+.mdl-spinner__layer-1 {
+  border-color: var(--accent-color);
+}
